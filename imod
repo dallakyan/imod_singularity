@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ARGS=$@
+
+if [ "$#" -lt 1 ]; then
+  echo "Enter an IMOD command."
+else
+  echo -e "\nExecuting \`$ARGS\`\n"
+  singularity  exec -B /home/:/home/ imod.img bash -c "source /etc/profile.d/IMOD-linux.sh && $ARGS"
+fi
+
