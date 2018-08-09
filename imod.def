@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: ubuntu:latest
+From: ubuntu:trusty
 
 %help
 Singularity container for IMOD processing suite.
