@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Building Singularity image imod.img..."
-singularity build imod.img imod.def
+singularity build --writable imod.img imod.def
 
 
 echo -e "\nBuild complete. Run ./imod <imod_command> to execute a command.\n"
